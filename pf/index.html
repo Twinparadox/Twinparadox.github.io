@@ -15,26 +15,30 @@
 
 <body>
     <nav class="navbar">
-        <div class="homelogo">
-            <a href="./index.html">
-                <img src="">
-            </a>
-        </div>
-        <div class="container-navbar">
-            <ul class="navbar">
-                <li class="navbar-item">
-                    <a class="navbar-item" href="./about.html">ABOUT</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-item" href="./study.html">EDUCATION</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-item" href="./project.html">PROJECT</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-item" href="./gallery.html">GALLERY</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-main">
+                    <a class="main-link" href="./index.html">
+                        NAM WON WOO
+                    </a>
+                </div>
+                <div class="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="./study.html">EDUCATION</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="./project.html">PROJECT</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="./gallery.html">GALLERY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -61,14 +65,27 @@
         </div>
 
         <h1>HISTORY</h1>
+        <p id="history">
+            2011 ~ 2014 : Daejeon High School
+            <br> 2015 ~ : Dept. Information & Communication Engineering, Changwon National University
+            <br>
+        </p>
 
         <h1>LANGUAGES</h1>
         <div class="row">
-            <div class="col">
-
+            <div class="col col-2">
+                <div class="card">
+                    <div class="card-title">
+                        ""
+                    </div>
+                </div>
             </div>
-            <div class="col">
+            <div class="col col-2">
+                <div class="card">
+                    <div class="card-title">
 
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -79,10 +96,14 @@
                     <img class="card" src="./img/C++.png">
                     <div class="card-body">
                         <h4 class="card-title">C++</h4>
-                        <p class="card-text"></p>
+                        <p class="card-text">
+                            C++ is my first programming language.
+                            <br> I don't use C++ to make application programs anymore. But, I usually use C++ to solve algorithm
+                            problems like codeforces.
+                        </p>
                     </div>
                     <div class="card-footer">
-                        
+
                     </div>
                 </div>
             </div>
@@ -91,7 +112,12 @@
                     <img class="card" src="./img/CSharp.png">
                     <div class="card-body">
                         <h4 class="card-title">C#</h4>
-                        <p class="card-text"></p>
+                        <p class="card-text">
+                            I use C# to make Windows applications.
+                            <br> I mostly create Windows applications with Winform, and I also have experience with using WPF.
+                            <br> I'm a novice about Xamarin, and I've never done a proejct with it.
+                        </p>
+
                     </div>
                     <div class="card-footer">
 
@@ -103,7 +129,10 @@
                     <img class="card" src="./img/Kotlin.png">
                     <div class="card-body">
                         <h4 class="card-title">Kotlin</h4>
-                        <p class="card-text"></p>
+                        <p class="card-text">
+                            This language is my biggest interest.
+                            <br> I recently started using this language and I'm in my infancy.
+                        </p>
                     </div>
                     <div class="card-footer">
 
@@ -116,26 +145,56 @@
 
         <h1>CONTACTS</h1>
         <div class="row">
-            <div class="col">
-                <a href="https://github.com/Twinparadox">
-                    <img src="./img/github">
-                </a>
+            <div class="col col-4">
+                <div class="card">
+                    <a href="https://github.com/Twinparadox">
+                        <img class="card" src="./img/github.png">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is my Github page.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <a href="https://github.com/Twinparadox">
-                    <img src="./img/github">
-                </a>
+            <div class="col col-4">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/원우-남-4bb0b0165">
+                        <img class="card" src="./img/linkedin.png">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is my Linkedin profile.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col">
-            <a href="https://github.com/Twinparadox">
-                <img src="./img/github">
-            </a>
-        </div>
-        <div class="col">
-            <a href="https://github.com/Twinparadox">
-                <img src="./img/github">
-            </a>
+
+            <div class="col col-4">
+                <div class="card">
+                    <a href="https://www.facebook.com/profile.php?id=100004910100515">
+                        <img class="card" src="./img/facebook.png">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is my Facebook profile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-4">
+                <div class="card">
+                    <a href="http://twinparadox.tistory.com/">
+                        <img class="card" src="./img/tistory.png">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is my Blog.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 html {
-    box-sizing:border-box;
 }
 
 body {
@@ -10,6 +9,14 @@ body {
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
+}
+
+nav {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color:#343a40!important;
 }
 
 .footer {
@@ -28,8 +35,8 @@ p.introduce {
 div.row {
     display:flex;
     flex-wrap:wrap;
-    margin-right:-20px;
-    margin-left:-20px;
+    margin-right:-15px;
+    margin-left:-15px;
 }
 
 @media (min-width:576px){
@@ -52,6 +59,10 @@ div.row {
     }
 }
 
+div {
+    box-sizing:border-box;
+}
+
 div.container {
     margin-right: auto;
     margin-left: auto;
@@ -60,12 +71,22 @@ div.container {
     width:100%;
 }
 
+div.container-navbar {
+    justify-content: space-between;
+}
+
 div.col {
     position:relative;
     width:100%;
     min-height:1px;
     padding-right:15px;
     padding-left:15px;
+    margin-bottom: 1.5rem!important;
+}
+
+div.col-2 {
+    flex:0 0 50%;
+    max-width:50%;
 }
 
 div.col-3 {
@@ -83,6 +104,7 @@ div.card {
     display:flex;
     flex-direction:column;
     min-width:0;
+    height:100%!important;
     word-wrap:break-word;
     background-color:#fff;
     background-clip:border-box;
@@ -96,6 +118,56 @@ div.card-body {
 div.card-footer {
 
 }
+
+div.navbar {
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+div.navbar-main {
+    
+}
+
+div.navbar-nav {
+    display:flex!important;
+}
+
+div.navbar-list {
+    flex-basis: 100%;
+    align-items: center;
+}
+
+ul {
+    margin-top:0;
+    list-style:none;
+}
+
+ul.navbar-nav {
+    display:flex;
+    padding-left:0;
+    margin-left:auto!important;
+    margin-bottom:0;
+}
+
+li.navbar-item {
+}
+
+a {
+    text-decoration:none;
+}
+
+a.navbar-link {
+    color:#fff;
+    display:block;
+}
+
+a.main-link {
+    color:#fff;
+    display:block;
+}
+
 
 img {
     vertical-align: middle;
