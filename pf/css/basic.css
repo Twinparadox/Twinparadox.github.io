@@ -29,6 +29,16 @@ nav {
     overflow:hidden;
 }
 
+p.card-text {
+
+}
+
+p.card-text-title {
+    font-size:20px;
+    text-align:center;
+    color:#fff;
+}
+
 p.introduce {
 }
 
@@ -51,6 +61,10 @@ div.row {
 @media (min-width:992px){
     .container {
         max-width: 960px;
+    }    
+    div.navbar-nav, a.navbar-link {
+        padding-right:0.5rem;
+        padding-left:0.5rem;
     }
 }
 @media (min-width:1200px){
@@ -112,9 +126,14 @@ div.card {
     border-radius:.25rem;
 }
 
+div.card-title {
+    background-color:rgb(49, 109, 219);
+}
+
 div.card-body {
     text-align:center;
 }
+
 div.card-footer {
 
 }
@@ -132,6 +151,7 @@ div.navbar-main {
 
 div.navbar-nav {
     display:flex!important;
+    margin-left:auto!important;
 }
 
 div.navbar-list {
@@ -147,11 +167,11 @@ ul {
 ul.navbar-nav {
     display:flex;
     padding-left:0;
-    margin-left:auto!important;
     margin-bottom:0;
 }
 
 li.navbar-item {
+    margin-left:auto!important;
 }
 
 a {
@@ -161,11 +181,21 @@ a {
 a.navbar-link {
     color:#fff;
     display:block;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
 }
 
 a.main-link {
     color:#fff;
     display:block;
+    font-size:30px;
+}
+
+#navbar-responsive {
+}
+
+button.navbar-toggle {
+
 }
 
 
