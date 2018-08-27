@@ -16,12 +16,13 @@ nav {
     top:0;
     right:0;
     left:0;
-    background-color:#343a40!important;
+    background-color:#287ed3!important;
     margin-bottom:auto;
+    z-index:100;
 }
 
 .footer {
-    background-color:#666666;
+    background-color:#81b7ff;
     bottom:0;
     left:0;
     right:0;
@@ -126,6 +127,11 @@ div.col-about {
     max-width:66.666667%;
 }
 
+div.col-project {
+    flex: 0 0 100%;
+    max-width:100%;
+}
+
 div.card {
     position:relative;
     display:flex;
@@ -137,6 +143,10 @@ div.card {
     background-clip:border-box;
     border:1px solid rgba(0,0,0,.1);
     border-radius:.25rem;
+}
+
+div.card-project-title {
+
 }
 
 div.card-title {
@@ -151,7 +161,6 @@ div.card-footer {
 }
 
 div.card-repo {
-
 }
 
 div.navbar {
@@ -207,6 +216,10 @@ a.main-link {
     font-size:30px;
 }
 
+a.img-link {
+
+}
+
 #navbar-responsive {
 }
 
@@ -224,4 +237,8 @@ img.card {
     width:100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+}
+
+img.link {
+    
 }
