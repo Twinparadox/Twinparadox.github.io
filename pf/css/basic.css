@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 html {
+    height:100%;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
+    height:100%;
 }
 
 nav {
@@ -27,8 +29,14 @@ nav {
     left:0;
     right:0;
     width:100%;
+    height:50px;
     z-index:100;
     overflow:hidden;
+    position:fixed;
+}
+
+section {
+    margin-bottom:50px;
 }
 
 p.card-text {
@@ -48,6 +56,14 @@ div.row {
     flex-wrap:wrap;
     margin-right:-15px;
     margin-left:-15px;
+}
+
+div.row-skill {
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px;
+    max-height:50px;
 }
 
 @media (min-width:576px){
@@ -79,6 +95,26 @@ div.row {
 
 div {
     box-sizing:border-box;
+}
+
+div.bgcolor-orange {
+    background-color:#ff9317;
+}
+
+div.bgcolor-green {
+    background-color:rgb(0, 128, 0);
+}
+
+div.bgcolor-bluegreen {
+    background-color:#007c67;
+}
+
+div.bgcolor-blue {
+    background-color:#1760c0;
+}
+
+div.bgcolor-purple {
+    background-color:#b240ff;
 }
 
 div.container {
@@ -117,6 +153,11 @@ div.col-4 {
     max-width:25%;
 }
 
+div.col-5 {
+    flex:0 0 20%;
+    max-width:20%;
+}
+
 div.col-image {
     flex: 0 0 33.333333%;
     max-width:33.333333%;
@@ -146,7 +187,10 @@ div.card {
 }
 
 div.card-project-title {
-
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    color:#fff;
 }
 
 div.card-title {
@@ -241,4 +285,9 @@ img.card {
 
 img.link {
     
+}
+
+img.logo-skill {
+    max-width:100%;
+    max-height:100%;
 }
