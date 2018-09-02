@@ -11,6 +11,7 @@ body {
     font-weight:400;
     line-height:1.5;
     height:100%;
+    padding-top:45px;
 }
 
 nav {
@@ -63,7 +64,7 @@ div.row-skill {
     flex-wrap:wrap;
     margin-right:-15px;
     margin-left:-15px;
-    max-height:50px;
+    max-height:100px;
 }
 
 @media (min-width:576px){
@@ -82,9 +83,6 @@ div.row-skill {
     div.navbar-nav, a.navbar-link {
         padding-right:0.5rem;
         padding-left:0.5rem;
-    }
-    body {  
-        padding-top:45px;
     }
 }
 @media (min-width:1200px){
@@ -201,7 +199,10 @@ div.card-body {
 }
 
 div.card-footer {
+}
 
+div.card-skill {
+    padding-top:25px;
 }
 
 div.card-repo {
@@ -226,6 +227,15 @@ div.navbar-nav {
 div.navbar-list {
     flex-basis: 100%;
     align-items: center;
+}
+
+div.project {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+div.project-img {
+
 }
 
 ul {
@@ -258,6 +268,10 @@ a.main-link {
     color:#fff;
     display:block;
     font-size:30px;
+}
+
+a.goto {
+    color:blue;
 }
 
 a.img-link {
