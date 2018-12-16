@@ -256,6 +256,7 @@ div.panel-heading {
 }
 
 div.panel-body {
+  text-transform: none;
   min-width: 100%;
 }
 
@@ -263,10 +264,45 @@ div.panel-footer {
   text-align:center;
 }
 
-span.read-more-open {
+.text-transform-none {
+  text-transform: none;
+}
 
+span.read-more-open {
 }
 
 span.read-more-close {
+}
 
+@media (min-width:576px) {
+  div.card-video {
+    height:300px;
+  }
+
+  img.card-1 {
+  }
+
+  img.card-2 {
+    position: absolute; top:0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.card-3 {
+    position: absolute; top:0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe.card-1 {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe.card-2 {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
