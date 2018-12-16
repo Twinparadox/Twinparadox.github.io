@@ -55,6 +55,13 @@ p {
   font-weight: 700;
 }
 
+p.language-script {
+}
+
+p.project-script {
+
+}
+
 pre {
   white-space: pre-wrap;
 }
@@ -67,6 +74,7 @@ pre.profile-script {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.35rem;
+  min-width: 100%;
 }
 
 .skills-logo {
@@ -156,9 +164,6 @@ img.profile {
   section.resume-section {
     min-height: 100vh;
   }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
 }
 
 @media (min-width: 992px) {
@@ -168,6 +173,29 @@ img.profile {
   }
   img.profile-logo {
     max-width:10rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .col-3 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -210,10 +238,6 @@ div.col-profile-script {
   margin-left:15px;
 }
 
-.col-4 {
-  max-width:20%;
-}
-
 div.col-blog {
   text-align:center;
 }
@@ -227,5 +251,22 @@ div.row-category {
   margin-bottom:1rem;
 }
 
-div.programming-language {
+div.panel-heading {
+  text-align:center;
+}
+
+div.panel-body {
+  min-width: 100%;
+}
+
+div.panel-footer {
+  text-align:center;
+}
+
+span.read-more-open {
+
+}
+
+span.read-more-close {
+
 }
